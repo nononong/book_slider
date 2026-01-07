@@ -133,7 +133,7 @@ function initScrollControls() {
       const wrapper = this.closest(".slider-wrapper");
       const scrollContainer = wrapper.querySelector(".book-list-container");
 
-      const scrollAmount = scrollContainer.clientWidth * 0.8; // 한번에 80% 이동
+      const scrollAmount = scrollContainer.offsetWidth * 0.8; // 한번에 80% 이동
       const direction = this.classList.contains("left-btn") ? -1 : 1;
 
       scrollContainer.scrollBy({
